@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6p4qta7epoow"
+path="res://.godot/imported/Run It All.mp3-873eed341c622430f6ffe4fa3b9d1352.mp3str"
+
+[deps]
+
+source_file="res://Musique_etc/Run It All.mp3"
+dest_files=["res://.godot/imported/Run It All.mp3-873eed341c622430f6ffe4fa3b9d1352.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

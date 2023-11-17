@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsr2uwejuqfv7"]
+
+[ext_resource type="Texture2D" uid="uid://cna57sn72lsut" path="res://Assets/FPS-controller-assets-main/assets/textures/dev/grids/Dark/texture_07.png" id="1_rwmhk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f27ni"]
+albedo_texture = ExtResource("1_rwmhk")
+uv1_triplanar = true
+
+[node name="Stage" type="Node3D"]
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="Ground" type="CSGBox3D" parent="Walls"]
+use_collision = true
+size = Vector3(10, 1, 200)
+material = SubResource("StandardMaterial3D_f27ni")
+
+[node name="Ground4" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+use_collision = true
+size = Vector3(10, 1, 200)
+material = SubResource("StandardMaterial3D_f27ni")
+
+[node name="Ground2" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 5, 0, 0)
+use_collision = true
+size = Vector3(10, 1, 200)
+material = SubResource("StandardMaterial3D_f27ni")
+
+[node name="Ground3" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -5, 0, 0)
+use_collision = true
+size = Vector3(10, 1, 200)
+material = SubResource("StandardMaterial3D_f27ni")
+
+[node name="Obstacles" type="Node" parent="."]
+
+[node name="Bar_obstacle" type="CSGCylinder3D" parent="Obstacles"]
+transform = Transform3D(-4.37114e-08, -10, 0, 1, -4.37114e-07, 0, 0, 0, 1, 0, 2.8, 3)
+layers = 3
+use_collision = true
